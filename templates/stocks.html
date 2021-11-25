@@ -1,0 +1,10 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+    <h1>Stocks</h1>
+    <ul class="list-group">
+        {% for stock in stocks %}
+            <li class="list-group-item">{{stock.name}}</li>
+        {% endfor %}
+    </ul>
+{% endblock %}
